@@ -14,7 +14,7 @@ const server = http.createServer(app);
 // Middleware
 app.use(express.json({ limit: "4mb" }));
 app.use(cors({
-    origin: "http://localhost:5173",
+    origin: "https://mern-chat-app-frontend-ruddy.vercel.app",
     credentials: true
 }));
 
