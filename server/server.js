@@ -14,7 +14,7 @@ const server = http.createServer(app);
 // Middleware
 app.use(express.json({ limit: "4mb" }));
 app.use(cors({
-    origin: "https://mern-chat-app-frontend-ruddy.vercel.app",
+    origin: "https://mern-chat-app-frontend-vinas-projects-5edb83ff.vercel.app",
     credentials: true
 }));
 
@@ -29,7 +29,7 @@ app.use("/api/messages", messageRouter);
 // Socket.IO
 export const io = new Server(server, {
     cors: {
-        origin: "https://mern-chat-app-frontend-ruddy.vercel.app",
+        origin: "https://mern-chat-app-frontend-vinas-projects-5edb83ff.vercel.app",
         credentials: true
     }
 });
